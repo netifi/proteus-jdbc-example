@@ -1,14 +1,28 @@
-group 'io.netifi.proteus'
-version '0.1.0'
-
-apply plugin: 'java'
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.flywaydb.flyway' version '4.2.0'
+}
 
 sourceCompatibility = 1.8
+mainClassName = 'io.netifi.proteus.example.service.Main'
 
 repositories {
-    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':service-idl')
+
+    compile 'com.github.davidmoten:rxjava2-jdbc:0.1-RC29'
+    compile 'com.h2database:h2:1.4.196'
 }
+
+flyway {
+    url = 'jdbc:h2:./build/database'
+    user = 'sa'
+    password = 'sa'
+}
+clean.dependsOn(flywayClean)
+build.dependsOn(flywayMigrate)
+run.dependsOn(build)
