@@ -21,14 +21,14 @@ This example requires the following prerequisites:
 
 3. PostgeSQL Database
 
-Start a PostgreSQL instance as a Docker container using the following commands:
+    Start a PostgreSQL instance as a Docker container using the following commands:
 
         $ docker pull postgres
         $ docker run --name=proteus-db -p 5432:5432 -d postgres
 
 4. Netifi Proteus Router
 
-Download the router as a Docker container using the following command:
+    Download the router as a Docker container using the following command:
 
         $ docker pull netifi/proteus
         
