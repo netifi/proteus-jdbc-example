@@ -2,6 +2,8 @@
 
 An example of using [Netifi Proteus](https://www.netifi.com/proteus.html) to retrieve data from a database using JDBC.
 
+The example starts a service that exposes a method to query employees in particular departments from a relational database.
+
 ## Prerequisites
 This example requires a running PostgreSQL database. Start a PostgreSQL instance as a Docker container using the following commands:
 

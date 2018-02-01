@@ -36,8 +36,7 @@ public class DefaultEmployeeService implements EmployeeService {
         this.database = Database
                 .nonBlocking()
                 .url("jdbc:postgresql://localhost:5432/postgres")
-                .healthCheck(DatabaseType.H2)
-                .maxPoolSize(3)
+                .healthCheck(DatabaseType.POSTGRES)
                 .build();
     }
 
