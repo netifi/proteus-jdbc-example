@@ -1,5 +1,7 @@
 # proteus-jdbc-example
 
+An example of using [Netifi Proteus](https://www.netifi.com/proteus) to retrieve data from a database using JDBC.
+
 ## License
 Copyright 2018 Netifi Inc.
 
