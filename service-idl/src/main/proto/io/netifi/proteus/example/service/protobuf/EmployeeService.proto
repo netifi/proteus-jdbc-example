@@ -8,15 +8,15 @@ option java_multiple_files = true;
 
 service EmployeeService {
 
-    // Returns a Hello World Message
-    rpc GetDepartmentEmployees (GetDepartmentEmployeesRequest) returns (stream DepartmentEmployee) {}
+    // Returns a stream of all employees in the requested department
+    rpc GetDepartmentEmployees (GetDepartmentEmployeesRequest) returns (stream Employee) {}
 }
 
 message GetDepartmentEmployeesRequest {
     string department = 1;
 }
 
-message DepartmentEmployee {
+message Employee {
     int32 profileId             = 1;
     string profileFirstName     = 2;
     string profileLastName      = 3;
