@@ -1,4 +1,3 @@
-
 syntax = "proto3";
 
 package io.netifi.proteus.example.service;
@@ -26,4 +25,3 @@ message DepartmentEmployee {
     string profileImage         = 6;
     string profileDepartment    = 7;
 }
-
