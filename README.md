@@ -8,6 +8,9 @@ This example requires a running PostgreSQL database. Start a PostgreSQL instance
         $ docker pull postgres
         $ docker run --name=proteus-db -p 5432:5432 -d postgres
         
+## Running the Example
+
+        
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
 

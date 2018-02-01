@@ -16,12 +16,10 @@ dependencies {
 
     compile "io.netifi.proteus:client:$proteusVersion"
     compile 'com.google.protobuf:protobuf-java:3.5.0'
-    compile 'org.apache.logging.log4j:log4j-api:2.8.2'
-    compile 'org.apache.logging.log4j:log4j-core:2.8.2'
-    compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.8.2'
     compile 'com.github.davidmoten:rxjava2-jdbc:0.1-RC29'
     compile 'org.postgresql:postgresql:42.1.4'
     compile 'io.projectreactor.addons:reactor-adapter:3.1.4.RELEASE'
+    compile 'org.slf4j:slf4j-simple:1.7.25'
 }
 
 flyway {
