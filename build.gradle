@@ -9,6 +9,12 @@ buildScan {
 }
 
 allprojects {
+    apply plugin: 'idea'
+
+    ext {
+        proteusVersion = '0.4.1'
+    }
+
     repositories {
         jcenter()
         mavenCentral()

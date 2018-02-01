@@ -1,0 +1,29 @@
+
+syntax = "proto3";
+
+package io.netifi.proteus.example.service;
+
+option java_package = "io.netifi.proteus.example.service.protobuf";
+option java_outer_classname = "EmployeeServiceProto";
+option java_multiple_files = true;
+
+service EmployeeService {
+
+    // Returns a Hello World Message
+    rpc GetDepartmentEmployees (GetDepartmentEmployeesRequest) returns (stream DepartmentEmployee) {}
+}
+
+message GetDepartmentEmployeesRequest {
+    string department = 1;
+}
+
+message DepartmentEmployee {
+    int32 profileId             = 1;
+    string profileFirstName     = 2;
+    string profileLastName      = 3;
+    string profileEmail         = 4;
+    string profileSSN           = 5;
+    string profileImage         = 6;
+    string profileDepartment    = 7;
+}
+
