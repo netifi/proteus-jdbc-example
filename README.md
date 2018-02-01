@@ -39,11 +39,11 @@ Follow the steps below to run the example:
 
     Start the Proteus Router by running the following command:
     
-    $ docker run -p 8001:8001 -p 7001:7001 -e ROUTER_SERVER_OPTS='-Dnetifi.authentication.0.accessKey=7685465987873703191 -Dnetifi.authentication.0.accessToken=PYYgV9XHSJ/3KqgK5wYjz+73MeA= -Dnetifi.authentication.0.accountId=100' netifi/proteus
+        $ docker run -p 8001:8001 -p 7001:7001 -e ROUTER_SERVER_OPTS='-Dnetifi.authentication.0.accessKey=7685465987873703191 -Dnetifi.authentication.0.accessToken=PYYgV9XHSJ/3KqgK5wYjz+73MeA= -Dnetifi.authentication.0.accountId=100' netifi/proteus
     
     You should see a message similar to the following in the terminal when the router starts:
     
-    2018-02-01 21:29:30,001 INFO i.n.r.Bootstrap [main] Router started in 474.37 milliseconds
+        2018-02-01 21:29:30,001 INFO i.n.r.Bootstrap [main] Router started in 474.37 milliseconds
 
 2. Start the Employee Microservice
 
