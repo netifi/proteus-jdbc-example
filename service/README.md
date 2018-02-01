@@ -1,9 +1,7 @@
 # service
-
 Proteus microservice that queries the example employee database.
 
 ## Running the Service
-
 Start the Employee microservice by running the following command in a new terminal:
 
     $ ./gradlew :service:run
