@@ -2,6 +2,9 @@
 
 An example of using [Netifi Proteus](https://www.netifi.com/proteus.html) to retrieve data from a database using JDBC.
 
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
+
 ## License
 Copyright 2018 Netifi Inc.
 
