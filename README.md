@@ -47,15 +47,15 @@ Follow the steps below to run the example:
 
 2. Start the Employee Microservice
 
-Start the Employee microservice by running the following command in a new terminal:
-
-    $ ./gradlew :service:run
+    Start the Employee microservice by running the following command in a new terminal:
+    
+        $ ./gradlew :service:run
 
 3. Run the Employee Client
 
-Execute the Employee Client to query for all employees in "Business Development" by running the following command:
-
-    $ ./gradlew :client:run
+    Execute the Employee Client to query for all employees in "Business Development" by running the following command:
+    
+        $ ./gradlew :client:run
         
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
