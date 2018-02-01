@@ -21,6 +21,7 @@ dependencies {
     compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.8.2'
     compile 'com.github.davidmoten:rxjava2-jdbc:0.1-RC29'
     compile 'com.h2database:h2:1.4.196'
+    compile 'com.zaxxer:HikariCP:2.7.6'
 }
 
 flyway {
