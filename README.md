@@ -72,7 +72,7 @@ Follow the steps below to run the example:
         [reactor-tcp-nio-4] INFO io.netifi.proteus.example.client.Main - Employee: [id: 16, lastName: Shipley, firstName: Adelheid, email: ashipleyf@weibo.com, dept: Business Development
         
 ## Bugs and Feedback
-For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/netifi/proteus-jdbc-example/issues).
 
 ## License
 Copyright 2018 Netifi Inc.
