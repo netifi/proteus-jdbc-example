@@ -11,7 +11,11 @@ This example requires a running PostgreSQL database. Start a PostgreSQL instance
         $ docker run --name=proteus-db -p 5432:5432 -d postgres
         
 ## Running the Example
+Follow the steps below to run the example:
 
+1. Start the Service
+
+2. Run the Client
         
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
