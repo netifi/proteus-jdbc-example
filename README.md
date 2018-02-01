@@ -2,6 +2,12 @@
 
 An example of using [Netifi Proteus](https://www.netifi.com/proteus.html) to retrieve data from a database using JDBC.
 
+## Prerequisites
+This example requires a running PostgreSQL database. Start a PostgreSQL instance as a Docker container using the following commands:
+
+        $ docker pull postgres
+        $ docker run --name=proteus-db -p 5432:5432 -d postgres
+        
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
 

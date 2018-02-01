@@ -20,14 +20,13 @@ dependencies {
     compile 'org.apache.logging.log4j:log4j-core:2.8.2'
     compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.8.2'
     compile 'com.github.davidmoten:rxjava2-jdbc:0.1-RC29'
-    compile 'com.h2database:h2:1.4.196'
-    compile 'com.zaxxer:HikariCP:2.7.6'
+    compile 'org.postgresql:postgresql:42.1.4'
+    compile 'io.projectreactor.addons:reactor-adapter:3.1.4.RELEASE'
 }
 
 flyway {
-    url = 'jdbc:h2:./build/database'
-    user = 'sa'
-    password = 'sa'
+    url = 'jdbc:postgresql://localhost:5432/postgres'
+    user = 'postgres'
 }
 clean.dependsOn(flywayClean)
 build.dependsOn(flywayMigrate)
