@@ -4,7 +4,7 @@ Proteus microservice that queries the example employee database.
 ## Running the Service
 Start the Employee microservice by running the following command in a new terminal:
 
-    $ ./gradlew :service:run
+    $ ../gradlew :service:run
     
 When the service has successfully connected to the router you will see a message in the terminal similar to the following:
 
