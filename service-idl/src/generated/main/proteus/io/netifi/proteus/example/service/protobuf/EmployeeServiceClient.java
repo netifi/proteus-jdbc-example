@@ -1,7 +1,7 @@
 package io.netifi.proteus.example.service.protobuf;
 
 @javax.annotation.Generated(
-    value = "by Proteus proto compiler (version 0.4.1)",
+    value = "by Proteus proto compiler (version 0.4.2)",
     comments = "Source: io/netifi/proteus/example/service/protobuf/EmployeeService.proto")
 public final class EmployeeServiceClient implements EmployeeService {
   private final io.rsocket.RSocket rSocket;
@@ -26,7 +26,7 @@ public final class EmployeeServiceClient implements EmployeeService {
     return reactor.core.publisher.Flux.defer(new java.util.function.Supplier<reactor.core.publisher.Flux<io.rsocket.Payload>>() {
       @java.lang.Override
       public reactor.core.publisher.Flux<io.rsocket.Payload> get() {
-        final int length = io.netifi.proteus.frames.ProteusMetadata.computeLength();
+        final int length = io.netifi.proteus.frames.ProteusMetadata.computeLength(metadata);
         io.netty.buffer.ByteBuf metadataBuf = io.netty.buffer.ByteBufAllocator.DEFAULT.directBuffer(length);
         io.netifi.proteus.frames.ProteusMetadata.encode(metadataBuf, EmployeeService.NAMESPACE_ID, EmployeeService.SERVICE_ID, EmployeeService.METHOD_GET_DEPARTMENT_EMPLOYEES, metadata);
         io.netty.buffer.ByteBuf data = serialize(message);

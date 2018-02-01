@@ -1,7 +1,7 @@
 package io.netifi.proteus.example.service.protobuf;
 
 @javax.annotation.Generated(
-    value = "by Proteus proto compiler (version 0.4.1)",
+    value = "by Proteus proto compiler (version 0.4.2)",
     comments = "Source: io/netifi/proteus/example/service/protobuf/EmployeeService.proto")
 public final class EmployeeServiceServer extends io.netifi.proteus.AbstractProteusService {
   private final EmployeeService service;
