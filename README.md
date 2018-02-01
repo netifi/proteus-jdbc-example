@@ -5,7 +5,22 @@ An example of using [Netifi Proteus](https://www.netifi.com/proteus.html) to ret
 The example starts a service that exposes a method to query employees in particular departments from a relational database.
 
 ## Prerequisites
-This example requires a running PostgreSQL database. Start a PostgreSQL instance as a Docker container using the following commands:
+This example requires the following prerequisites:
+
+1. [Java Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+2. Protocol Buffers Compiler
+
+    You can download the compiler from here: https://github.com/google/protobuf/releases
+    
+    OR
+    
+    If you are on a mac using homebrew you can install it with the following command:
+    
+        $ brew install protobuf
+
+3. PostgeSQL Database
+Start a PostgreSQL instance as a Docker container using the following commands:
 
         $ docker pull postgres
         $ docker run --name=proteus-db -p 5432:5432 -d postgres
