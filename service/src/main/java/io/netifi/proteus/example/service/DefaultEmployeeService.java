@@ -51,7 +51,7 @@ public class DefaultEmployeeService implements EmployeeService {
                         .setProfileEmail(rs.getString("profile_email"))
                         .setProfileSSN(rs.getString("profile_ssn"))
                         .setProfileImage(rs.getString("profile_image"))
-                        .setProfileDepartment("profile_dept")
+                        .setProfileDepartment(rs.getString("profile_dept"))
                         .build()
                 )
         );

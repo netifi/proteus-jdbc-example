@@ -50,12 +50,26 @@ Follow the steps below to run the example:
     Start the Employee microservice by running the following command in a new terminal:
     
         $ ./gradlew :service:run
+        
+    When the service has successfully connected to the router you will see a message in the terminal similar to the following:
+    
+        > Task :service:run
+        [main] INFO io.netifi.proteus.Netifi - registering with netifi with account id 100, group proteus.example.services.employeeservices, and destination employeeservice-fc07a25f-30ed-4fdb-b752-0e0a29ce0e23
 
 3. Run the Employee Client
 
     Execute the Employee Client to query for all employees in "Business Development" by running the following command:
     
         $ ./gradlew :client:run
+        
+    When the client successfully calls the service and returns data you will see a response similar to the following in the terminal:
+    
+        > Task :client:run
+        [main] INFO io.netifi.proteus.Netifi - registering with netifi with account id 100, group proteus.example.services.employeesclient, and destination employeeclient-b1f6c349-af40-424f-8f87-6fa5e6eb7d22
+        [main] INFO io.netifi.proteus.example.client.Main - Getting all employees in Business Development...
+        [reactor-tcp-nio-4] INFO io.netifi.proteus.example.client.Main - Employee: [id: 11, lastName: Seel, firstName: Randi, email: rseela@flavors.me, dept: Business Development
+        [reactor-tcp-nio-4] INFO io.netifi.proteus.example.client.Main - Employee: [id: 15, lastName: Denzilow, firstName: Riva, email: rdenzilowe@usatoday.com, dept: Business Development
+        [reactor-tcp-nio-4] INFO io.netifi.proteus.example.client.Main - Employee: [id: 16, lastName: Shipley, firstName: Adelheid, email: ashipleyf@weibo.com, dept: Business Development
         
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-jdbc-example/issues).
